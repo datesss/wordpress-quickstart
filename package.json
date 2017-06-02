@@ -1,0 +1,19 @@
+{
+  "name": "wordpress-quickstart",
+  "version": "0.0.1",
+  "description": "docker-compose up -d",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "sudo sh ./startup.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://datesss@github.com/datesss/wordpress-quickstart.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/datesss/wordpress-quickstart/issues"
+  },
+  "homepage": "https://github.com/datesss/wordpress-quickstart#readme"
+}
