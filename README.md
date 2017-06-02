@@ -17,3 +17,12 @@ The startup script adds wp-cli to the docker and alias' it into the shell so you
 - `docker ps` list running dockers
 - `docker exec -ti __CONTAINER_NAME__ bash` get shell inside container
 
+## so you want to go to Production?
+- ` gcloud auth login`
+- `docker-machine create --driver google --google-project PROJECT_ID vm01`
+- `docker-machine env vm01`
+- `docker-compose -f production.yml up -d`
+- `docker-machine ip em01`
+
+## push to prod
+- `docker-machine scp -r PATHTOREPO/site vm01:/dockerVols`
