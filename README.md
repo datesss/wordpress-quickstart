@@ -6,7 +6,9 @@ Run wordpress in docker containers for speed and fun !
 copy `.env.config` to `.env` and add your own values.
 `npm install`
 
-That's it! visit your localhost and you got a wordpress runnin, start hacking away in `wp-content`. The startup script adds wp-cli to the docker and alias' it into the shell so you can `wp post list` for example.
+That's it! Wordpress is running!
+Visit your localhost in your browser, or start hacking away in `wp-content`.
+The startup script adds wp-cli to the docker and alias' it into the shell so you can ran wp-cli commands. `wp post list` for example.
 
 
 ## commands
