@@ -22,4 +22,4 @@ The startup script adds wp-cli to the docker and alias' it into the shell so you
 - `docker-machine create --driver google --google-project PROJECT_ID vm01`
 - `docker-machine env vm01`
 - `npm start`
-
+- `docker-machine ip em01`
