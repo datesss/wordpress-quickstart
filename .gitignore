@@ -2,3 +2,5 @@
 /wordpress
 /.DS_Store
 /.env
+/db
+/site
