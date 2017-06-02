@@ -3,8 +3,8 @@ Run wordpress in docker containers for speed and fun !
 
 
 ## install
-copy `.env.config` to `.env` and add your own values.
-`npm install`
+- copy `.env.config` to `.env` and add your own values.
+- `npm install`
 
 That's it! Wordpress is running!
 Visit your localhost in your browser, or start hacking away in `wp-content`.
