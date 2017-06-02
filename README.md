@@ -21,6 +21,10 @@ wp core install --url="localhost" --title=$WP_SITE_TITLE --admin_user=$WP_USERNA
 
 ## commands to stop
 `docker-compose down`
+
 `docker-compose down -v` (removes volume)
+
 `docker-compose down -v -rmi all`  (removes images / fresh start)
+
 `docker exec -ti __CONTAINER_NAME__ bash` get shell inside container
+
