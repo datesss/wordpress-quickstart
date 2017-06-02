@@ -1,6 +1,6 @@
 ## wordpress quickstart
-If you're like me, you hate "MAMP", everytime you switch local projects / environments you are fiddling with your apache configs, its a headache.
 Run wordpress in docker containers for speed and fun !
+
 
 ## install
 copy `.env.config` to `.env` and add your own values.
