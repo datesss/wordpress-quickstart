@@ -5,11 +5,14 @@
 `docker-compose up -d`
 
 ### add wp-cli
-```curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
+```
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar
 docker cp wp-cli.phar dockerwordpress_wordpress_1:/usr/local/bin/wp
 alias wp="docker exec dockerwordpress_wordpress_1 wp --allow-root"
-export $(cat .env | xargs)```
+export $(cat .env | xargs)
+```
 
 ### finish setting up site
 ```
