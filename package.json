@@ -4,7 +4,7 @@
   "description": "docker-compose up -d",
   "main": "index.js",
   "scripts": {
-    "postinstall": "sudo sh ./startup.sh",
+    "postinstall": "sh ./startup.sh",
     "stop": "docker-compose down",
     "start": "docker-compose up -d",
     "test": "echo \"Error: no test specified\" && exit 1"
