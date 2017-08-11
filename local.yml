@@ -19,8 +19,8 @@ services:
        - db
      image: wordpress:latest
      ports:
-       - '80'
-       - '443'
+       - "80:80"
+       - "443:443"
      restart: always
      environment:
        WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
@@ -30,17 +30,12 @@ services:
        VIRTUAL_HOST: ${VIRTUAL_HOST}
       #  VIRTUAL_PROTO: https
       #  VIRTUAL_PORT: 443
-       LETSENCRYPT_HOST: ${LETSENCRYPT_HOST}
-       LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+      #  LETSENCRYPT_HOST: gromdev.jvb.io
+      #  LETSENCRYPT_EMAIL: jory@jvb.io
      volumes:
        - ${VOLUME_PATH}/site:/var/www/html/
-   #
-  #  cli:
-  #    image: wordpress:cli
-  #    volumes_from:
-  #      - wordpress
 
-networks:
-    default:
-       external:
-         name: v3_default
+   cli:
+     image: wordpress:cli
+     volumes_from:
+       - wordpress
